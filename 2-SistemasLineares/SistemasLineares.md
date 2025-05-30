@@ -13,7 +13,7 @@ Este módulo trata da resolução de sistemas lineares de equações, abordando 
 
 ### 🧮 Conceitos Importantes
 
-* Um sistema linear  possui solução única se o determinante de  é diferente de zero.
+* Um sistema linear  possui solução única se o determinante é diferente de zero.
 * O método de **Gauss** transforma a matriz em forma triangular superior para aplicar substituição regressiva.
 * O **Gauss-Jordan** vai além e transforma a matriz em forma reduzida por linhas (diagonal principal com 1 e zeros fora dela).
 
