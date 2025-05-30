@@ -13,16 +13,13 @@ Este módulo aborda os conceitos e implementações relacionadas ao  **cálculo 
 
 * **Erro Absoluto (EA)** :
 
-    $EA = |x_{\text{verdadeiro}} - x_{\text{aproximado}}|$
-
+  $EA = |x_{\text{verdadeiro}} - x_{\text{aproximado}}|$
 * **Erro Relativo (ER)** :
 
-    $	ER = \frac{|x_{\text{verdadeiro}} - x_{\text{aproximado}}|}{|x_{\text{verdadeiro}}|}$
-
+  $ER = \frac{|x_{\text{verdadeiro}} - x_{\text{aproximado}}|}{|x_{\text{verdadeiro}}|}$
 * **Erro Relativo Percentual (ERP)** :
 
-    $ERP=$$(\frac{EA}{|x_{\text{verdadeiro}}|}) \times 100\%$
-
+  $ERP=$$(\frac{EA}{|x_{\text{verdadeiro}}|}) \times 100\%$
 * **Erro Relativo Percentual Aproximado** (em métodos iterativos):
 
   $ERP_{aprox} = \left( \frac{|x_{\text{novo}} - x_{\text{antigo}}|}{|x_{\text{novo}}|} \right) \times 100\%$
