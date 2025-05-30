@@ -23,10 +23,10 @@ def newtonRaphsonNalg(x0,nalg,f,df,Tol,iterMax):
     
     if(nalg == 0):
         while(erro > Tol and iter < iterMax):
-            x_atual, x_ante,erro, iter = iteracoes(x_atual,x_ante,f,df, Tol ,iterMax)
+            x_atual, x_ante,erro, iter = iteracoes(x_atual,x_ante,f,df, Tol ,iter)
     else:
         while(np.abs(x_atual - x_ante) > 10**(-nalg-1) and iter < iterMax):
-            x_atual, x_ante,erro, iter = iteracoes(x_atual,x_ante,f,df, Tol ,iterMax)
+            x_atual, x_ante,erro, iter = iteracoes(x_atual,x_ante,f,df, Tol ,iter)
     return x_atual,erro, iter
 
 
@@ -36,5 +36,5 @@ def fxl(x):
 def f(x):
   return np.cos(x) - x**2
 
-[xr , erro, niter]  = newtonRaphsonNalg(1, 4, f, fxl,1e-5,2000) # Essa aq é a q vale de verdade
+[xr , erro, niter]  = newtonRaphsonNalg(1, 8, f, fxl,1e-5,2000) # Essa aq é a q vale de verdade
 print (xr, erro, niter)
