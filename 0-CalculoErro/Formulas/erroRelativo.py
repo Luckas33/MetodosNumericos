@@ -1,2 +1,6 @@
+import math
+import numpy as np
+
+
 def erroRelativo(real,estimado):
-    return (real - estimado)/real
+    return np.abs((real - estimado)/real)

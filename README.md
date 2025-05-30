@@ -1,99 +1,21 @@
-# 📘 Métodos Numéricos: Métodos Fechados e Abertos
+## 📃 Repositório de Métodos Numéricos
 
-Este repositório contém a implementação e explicações de **métodos numéricos para encontrar raízes de funções**. São abordados os dois principais grupos: **métodos fechados** e **métodos abertos**.
+Este repositório reúne implementações e documentações organizadas por tópicos sobre os principais métodos numéricos utilizados em cursos de ciência e engenharia. Foi desenvolvido como parte da disciplina de Métodos Numéricos do curso de Engenharia de Computação da Universidade Federal do Ceará (UFC), ministrada pelo professor João Paulo Vale Madeiro.
 
----
+### 📚 Estrutura
 
-## 📌 Objetivo
+O repositório é dividido em diretórios temáticos, cada um com seu próprio `README.md>`, exemplos e módulos Python:
 
-Resolver equações do tipo:
+```
+/
+├── 1-cálculo-do-erro/
+├── 2-raiz-das-equacoes/
+├── 3-sistemas-lineares/
+└── README.md  <- este arquivo
+```
 
-usando aproximações sucessivas, já que nem toda equação pode ser resolvida de forma analítica (exata).
+### 📖 Tópicos Abordados
 
----
-
-## 🧩 Conceitos Fundamentais
-
-- **Raiz de uma função**: valor de `x` para o qual `f(x) = 0`.
-- **Método numérico**: técnica iterativa para encontrar aproximações da raiz.
-- Os métodos são divididos em:
-  - **Fechados**: exigem um intervalo inicial onde a raiz esteja garantida.
-  - **Abertos**: usam apenas uma ou duas aproximações iniciais, sem garantia de conter a raiz.
-
----
-
-## 🔒 1.0 - Métodos Fechados
-
-Utilizam um **intervalo [a, b]** e exigem que **f(a)·f(b) < 0**, ou seja, a função muda de sinal no intervalo ⇒ existe uma raiz.
-
-### ✅ Vantagens:
-
-- Garantem convergência se a função for contínua e as condições forem respeitadas.
-
-### ❌ Desvantagens:
-
-- Convergência geralmente mais lenta.
-
-### Métodos:
-
-#### 1.1. Método da Bisseção
-
-- Divide o intervalo ao meio a cada iteração.
-- Simples e confiável.
-- Fórmula:
-  ``xₙ = (a + b) / 2``
-
-#### 1.2. Método da Falsa Posição (Regula Falsi)
-
-- Usa uma reta secante entre os pontos para estimar a raiz.
-- Mais rápido que a bisseção em certos casos.
-- Fórmula:
-  ``xₙ = (a·f(b) - b·f(a)) / (f(b) - f(a))``
-
----
-
-## 🔓 2.0 - Métodos Abertos
-
-Usam **um ou dois valores iniciais**, sem precisar de um intervalo onde a raiz esteja garantida.
-
-### ✅ Vantagens:
-
-- Convergência mais rápida (quando funciona bem).
-
-### ❌ Desvantagens:
-
-- Pode divergir (não encontrar a raiz).
-- Requer boas aproximações iniciais.
-
-### Métodos:
-
-#### 2.1. Método do Ponto Fixo
-
-- Reescreve `f(x) = 0` na forma `x = g(x)`.
-- Iteração:
-  ``xₙ₊₁ = g(xₙ)``
-
-#### 2.2. Método de Newton-Raphson
-
-- Usa a derivada da função.
-- Rápido e eficiente se a função for suave.
-- Fórmula:
-  ``xₙ₊₁ = xₙ - f(xₙ)/f'(xₙ)``
-
-#### 2.3. Método da Secante
-
-- Parecido com Newton, mas sem usar a derivada.
-- Usa duas aproximações anteriores:
-  ``xₙ = xₙ₋₁ - f(xₙ₋₁)·(xₙ₋₁ - xₙ₋₂)/(f(xₙ₋₁) - f(xₙ₋₂))``
-
----
-
-## 📈 Comparação entre métodos
-
-| Método         | Usa intervalo? | Requer derivada? | Convergência | Confiabilidade |
-| --------------- | -------------- | ---------------- | ------------- | -------------- |
-| Bisseção      | Sim            | Não             | Lenta         | Alta           |
-| Falsa Posição | Sim            | Não             | Média        | Alta           |
-| Ponto Fixo      | Não           | Não             | Lenta/Média  | Média         |
-| Newton-Raphson  | Não           | Sim              | Rápida       | Baixa/Média   |
-| Secante         | Não           | Não             | Rápida       | Média         |
+* **Cálculo do Erro:** Erros absoluto, relativo e percentual; aplicação em algoritmos iterativos.
+* **Raiz das Equações:** Métodos abertos e fechados para encontrar raízes de funções, como bissecção, Newton, secante etc.
+* **Sistemas Lineares:** Resolução de sistemas por Gauss, Gauss-Jordan e cálculo de determinantes.
