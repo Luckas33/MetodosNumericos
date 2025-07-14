@@ -31,26 +31,31 @@ Este módulo apresenta os principais métodos numéricos para encontrar raízes 
 Atualização do ponto médio do intervalo:
 
 $xmédia=a+b2x_{\text{médio}} = \frac{a + b}{2}$
+
 **🔹 Método da Posição Falsa (Regula Falsi)**
 
 Ponto de interseção da reta secante com o eixo xx:
 
 $xr=\frac{a*f(b)-b*f(a)}{f(a) - f(b)}$
+
 **🔹 Método de Newton-Raphson**
 
 Atualização da raiz:
 
 $xn+1=$ $x_n - \frac{f(x_n)}{f'(x_n)}$
+
 **🔹 Método do Ponto Fixo**
 
 Iteração simples de uma função reescrita x=g(x)x = g(x):
 
 $xn+1=g(xn)x_{n+1} $
+
 **🔹 Método da Secante**
 
 Aproximação da derivada com dois pontos:
 
 $xn+1= \frac{x0*f(x1) - x1*f(x0)}{f(x1) - f(x0)}$
+
 **🔹 Método de Horner (Avaliação de Polinômios)**
 
 Para um polinômio $P(x)=anxn+an−1xn−1+⋯+a1x+a0P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0:$
