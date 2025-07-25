@@ -1,0 +1,16 @@
+# Ignorar cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignorar arquivos de configuração locais do VS Code
+.vscode/
+
+# Ignorar arquivos temporários do sistema
+*.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de log ou temporários
+*.log
+*.tmp
+*.bak

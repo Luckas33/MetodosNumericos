@@ -1,16 +1,10 @@
 import numpy as np
+import sys
+import os
 
-def subs_retroativas(A,b):
-    n = len(A)
-    x = n * [n]
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '1-Determinantes')))
+import retroativas
 
-    for i in range(n-1,-1,-1):
-        S = 0
-        for j in range(i+1,n):
-            S = S + A[i][j] * x[j]
-        x[i] = (b[i] - S) / A[i][i]    
-    
-    return x
 
 def Gauss(A,b):
     n = len(A)
@@ -25,7 +19,7 @@ def Gauss(A,b):
             
             A[i][k] = 0
         
-    x = subs_retroativas(A,b)   
+    x = retroativas.subs_retroativas(A, b) 
     return x
 
 
