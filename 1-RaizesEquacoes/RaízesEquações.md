@@ -1,8 +1,3 @@
-
-Claro! Aqui está a versão atualizada da seção, agora com as fórmulas importantes incluídas:
-
----
-
 ## 🔄 Raiz das Equações
 
 Este módulo apresenta os principais métodos numéricos para encontrar raízes de equações não lineares, divididos entre **métodos fechados** (que requerem intervalo inicial) e **métodos abertos** (que utilizam apenas uma ou poucas aproximações iniciais). Também estão incluídos utilitários como o **método de Horner** e  **busca intervalar** .
@@ -36,7 +31,7 @@ $xmédia=a+b2x_{\text{médio}} = \frac{a + b}{2}$
 
 Ponto de interseção da reta secante com o eixo xx:
 
-$xr=\frac{a*f(b)-b*f(a)}{f(a) - f(b)}$
+$$xr=\frac{a*f(b)-b*f(a)}{f(a) - f(b)}$$
 
 **🔹 Método de Newton-Raphson**
 
