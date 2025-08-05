@@ -9,12 +9,12 @@ O repositório é dividido em diretórios temáticos, cada um contendo seu próp
 
 ```
 /
-├── 1-CalculoDeErro/
-├── 2-RaizesDeEquacoes/
-├── 3-SistemasLineares/
-├── 4-InterpolacaoPolinomial/
-├── 5-IntegracaoNumerica/
-├── TrabalhosComputacionais/
+├── 0-CalculoDeErro/
+├── 1-RaizesDeEquacoes/
+├── 2-SistemasLineares/
+├── 3-InterpolacaoPolinomial/
+├── 4-IntegracaoNumerica/
+├── 5-TrabalhosComputacionais/
 └── README.md                <- Este arquivo
 ```
 
