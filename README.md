@@ -25,7 +25,7 @@ O repositório é dividido em diretórios temáticos, cada um contendo seu próp
   * Análise de propagação de erros e sua aplicação em algoritmos iterativos.
 * **2. Raízes de Funções:**
   * Métodos fechados (com garantia de convergência) como Bissecção e Posição Falsa.
-  * Métodos abertos (com convergência mais rápida) como Newton-Raphson e Secante.
+  * Métodos abertos (com convergência mais rápida) como Ponto fixo, Newton-Raphson e Secante.
 * **3. Sistemas Lineares:**
   * Métodos diretos para resolução de sistemas, como Eliminação de Gauss e Gauss-Jordan.
   * Cálculo de determinantes e matrizes inversas.
